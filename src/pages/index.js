@@ -44,6 +44,7 @@ class IndexPage extends Component {
           delay={1000}
           scaleX={this.state.width > 600 ? [1, .8] : [1, 1]}
           scaleY={this.state.width > 600 ? [1, .8] : [1, 1]}
+          className={'home-page-anime '}
           // translateX={this.state.width < 600 ? ['0%', '5%'] : [0]}
           // translateY={this.state.width < 600 ? ['0%', '2.5%'] : [0]}
           // width={this.state.width < 600 ? ['100%', '91%'] : [100]}
@@ -112,11 +113,11 @@ class IndexPage extends Component {
                         <h1 id="dev" className="dev animateDown">DEV</h1>
                       </Anime>
                   </header>
-                  <div className="blogLink-bottom">
+                  {/* <div className="blogLink-bottom">
                     <Link to="/blog/">
                       <h4>Blog</h4>
                     </Link>
-                  </div>
+                  </div> */}
                 </section>
               </div>
           </div>
