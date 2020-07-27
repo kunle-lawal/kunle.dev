@@ -3,9 +3,9 @@ import { Link } from "gatsby"
 
 // import Layout from "../components/layout"
 import SEO from "../components/seo"
-import Button from "../components/button"
+// import Button from "../components/button"
 import '../css/main.css'
-import Anime, {anime} from 'react-anime';
+import Anime from 'react-anime';
 
 class IndexPage extends Component {
   state = {
@@ -58,10 +58,9 @@ class IndexPage extends Component {
             </Anime> */}
               <div className="social">
                 <div className="social_icons">
-                    <a href="https://www.linkedin.com/in/olakunle-l-54b42ab1/" id="fa" className="fa fa-linkedin icon"
-                        target="_blank"></a>
-                    <a href="https://twitter.com/olawal196" className="fa fa-twitter icon" id="fa" target="_blank"></a>
-                    <a href="https://github.com/kunle-lawal" className="fa fa-github icon" id="fa" target="_blank"></a>
+                    <a href="https://www.linkedin.com/in/olakunle-l-54b42ab1/" id="fa" className="fa fa-linkedin icon"></a>
+                    <a href="https://twitter.com/olawal196" className="fa fa-twitter icon" id="fa"></a>
+                    <a href="https://github.com/kunle-lawal" className="fa fa-github icon" id="fa"></a>
                 </div>
 
                 <Link to="/blog/">
@@ -115,7 +114,7 @@ class IndexPage extends Component {
                   </header>
                   <div className="blogLink-bottom">
                     <Link to="/blog/">
-                      <h4><span className="point">👉🏾</span>  Blog</h4>
+                      <h4><span className="point" role="img" aria-label="point right">👉🏾</span>  Blog</h4>
                     </Link>
                   </div>
                 </section>
