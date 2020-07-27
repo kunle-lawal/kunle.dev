@@ -249,10 +249,6 @@ body {
   height: 100%;
 }
 
-div {
-  height: 100%;
-}
-
 .home-page {
   width: 100%;
   min-height: 100vh;
@@ -344,7 +340,7 @@ div {
   top: 100px;
   transition: transform 0.5s;
   opacity: 0;
-  box-shadow: initial;
+  box-shadow: 1px 1px 2px #222;
 }
 @media only screen and (max-width: 700px) {
   .home-page .social_icons .icon {
@@ -515,7 +511,7 @@ div {
 }
 .home-page .page .intro .headerBackground {
   width: 450px;
-  height: 450px;
+  height: 517px;
   border-radius: 100%;
   background-color: #222;
   position: absolute;
@@ -592,7 +588,7 @@ div {
 }
 @media only screen and (max-width: 700px) {
   .home-page .page .intro header .dot-container .dot {
-    background-color: #f75b46;
+    background-color: #fff;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -610,6 +606,15 @@ div {
   animation: glideUp 1.6s forwards;
   animation-delay: 5.1s;
   visibility: hidden;
+}
+.home-page .page .intro .blogLink-bottom h4 {
+  font-size: 20px;
+  color: #fff;
+  background-color: #f75b46;
+  padding: 10px;
+  margin: initial;
+  font-family: "Darker Grotesque", sans-serif;
+  display: inline-block;
 }
 @media only screen and (max-width: 700px) {
   .home-page .page .intro .blogLink-bottom {

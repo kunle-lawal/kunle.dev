@@ -44,10 +44,10 @@ class IndexPage extends Component {
           delay={1000}
           scaleX={this.state.width > 600 ? [1, .8] : [1, 1]}
           scaleY={this.state.width > 600 ? [1, .8] : [1, 1]}
-          translateX={this.state.width < 600 ? ['0%', '5%'] : [0]}
-          translateY={this.state.width < 600 ? ['0%', '2.5%'] : [0]}
-          width={this.state.width < 600 ? ['100%', '91%'] : [100]}
-          height={this.state.width < 600 ? ['100vh', '95vh'] : [100]}
+          // translateX={this.state.width < 600 ? ['0%', '5%'] : [0]}
+          // translateY={this.state.width < 600 ? ['0%', '2.5%'] : [0]}
+          // width={this.state.width < 600 ? ['100%', '91%'] : [100]}
+          // height={this.state.width < 600 ? ['100vh', '95vh'] : [100]}
           >
           <div className="home-page">
             {/* <Anime delay={anime.stagger(100)}
@@ -77,7 +77,7 @@ class IndexPage extends Component {
                     translateX={this.state.width > 600 ? ['0', '-50%'] : ['100%', '0%']}
                     className="divide_left divide" id="divide_left"
                   ></Anime>
-                  <Anime easing="easeOutElastic"
+                  <Anime easing="spring"
                     delay={3000}
                     duration={2000}
                     scale={[0, 1.8]}
@@ -114,7 +114,7 @@ class IndexPage extends Component {
                   </header>
                   <div className="blogLink-bottom">
                     <Link to="/blog/">
-                      <h4><span className="point" role="img" aria-label="point right">👉🏾</span>  Blog</h4>
+                      <h4>Blog</h4>
                     </Link>
                   </div>
                 </section>
