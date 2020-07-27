@@ -424,6 +424,11 @@ strong {
   animation: glideUp 1.6s forwards;
   animation-delay: 5.1s;
 }
+@media only screen and (max-width: 700px) {
+  .home-page .social .blogLink-top {
+    display: none;
+  }
+}
 .home-page .social .blogLink-top span {
   font-size: 40px;
   margin-right: 30px;
@@ -576,9 +581,12 @@ strong {
 }
 .home-page .page .intro .blogLink-bottom {
   position: absolute;
-  bottom: 0;
+  bottom: -150px;
   left: 0;
   right: 0;
+  opacity: 0;
+  animation: glideUp 1.6s forwards;
+  animation-delay: 5.1s;
   visibility: hidden;
 }
 @media only screen and (max-width: 700px) {

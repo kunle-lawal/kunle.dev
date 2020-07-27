@@ -70,3 +70,4 @@ yarn-error.log
 package-lock.json
 *.json
 src/css/main.css.map
+package-lock.json

@@ -217,6 +217,10 @@
             animation: glideUp 1.6s forwards;
             animation-delay: 5.1s;
 
+            @include screen-size(small) {
+                display: none;
+            }
+
             span {
                 font-size: 40px;
                 margin-right:30px;
@@ -402,9 +406,12 @@
 
             .blogLink-bottom {
                 position: absolute;
-                bottom: 0;
+                bottom: -150px;
                 left: 0;
                 right: 0;
+                opacity: 0;
+                animation: glideUp 1.6s forwards;
+                animation-delay: 5.1s;
 
                 visibility: hidden;
 

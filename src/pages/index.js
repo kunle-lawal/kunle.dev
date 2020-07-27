@@ -42,12 +42,12 @@ class IndexPage extends Component {
         />
         <Anime easing="easeOutElastic"
           delay={1000}
-          scaleX={this.state.width > 600 ? [1, .8] : [1]}
-          scaleY={this.state.width > 600 ? [1, .8] : [1]}
-          translateX={this.state.width > 600 ? ['0%', '5%'] : [0]}
-          translateY={this.state.width > 600 ? ['0%', '2.5%'] : [0]}
-          width={this.state.width > 600 ? ['100%', '91%'] : [0]}
-          height={this.state.width > 600 ? ['100vh', '95vh'] : [0]}
+          scaleX={this.state.width > 600 ? [1, .8] : [1, 1]}
+          scaleY={this.state.width > 600 ? [1, .8] : [1, 1]}
+          translateX={this.state.width < 600 ? ['0%', '5%'] : [0]}
+          translateY={this.state.width < 600 ? ['0%', '2.5%'] : [0]}
+          width={this.state.width < 600 ? ['100%', '91%'] : [100]}
+          height={this.state.width < 600 ? ['100vh', '95vh'] : [100]}
           >
           <div className="home-page">
             {/* <Anime delay={anime.stagger(100)}
