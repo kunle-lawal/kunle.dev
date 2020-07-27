@@ -231,6 +231,28 @@ strong {
   font-weight: bold;
 }
 
+html {
+  height: 100%;
+}
+
+body {
+  background-color: #efefef;
+  height: 100%;
+  overflow: hidden;
+}
+
+#___gatsby {
+  height: 100%;
+}
+
+#gatsby-focus-wrapper {
+  height: 100%;
+}
+
+div {
+  height: 100%;
+}
+
 .home-page {
   width: 100%;
   min-height: 100vh;
