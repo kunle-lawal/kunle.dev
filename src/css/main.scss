@@ -6,7 +6,6 @@ html {
 body {
     background-color: #efefef;
     height:100%;
-    overflow: hidden;
 }
 
 #___gatsby {
@@ -269,7 +268,8 @@ body {
         // width: 95%;
         // height: 95%;
         // margin-top: 50%;
-        background-color: #efefef;
+        background-color: #fff;
+        box-shadow: 2px 3px 4px rgb(211, 210, 210);
         // overflow-y: auto;
         // overflow-x: hidden;
         overflow: hidden;

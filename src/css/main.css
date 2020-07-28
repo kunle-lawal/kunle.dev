@@ -238,7 +238,6 @@ html {
 body {
   background-color: #efefef;
   height: 100%;
-  overflow: hidden;
 }
 
 #___gatsby {
@@ -472,7 +471,8 @@ body {
   left: 0px;
   right: 0px;
   margin: auto;
-  background-color: #efefef;
+  background-color: #fff;
+  box-shadow: 2px 3px 4px #d3d2d2;
   overflow: hidden;
   height: 100%;
 }
