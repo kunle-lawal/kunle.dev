@@ -7,12 +7,15 @@ import {ThreeUp} from '../ThreeUp'
 
 class HeroSpace extends Component {
     render() {
+        let filteredPosts = this.props.posts.splice(0, 3);
         return (
             <div className="hero">
-                <FeaturedPost/>
+                <FeaturedPost
+                    posts={filteredPosts}
+                />
                 <div className="recent_post">
                     <ThreeUp 
-                        posts={this.props.posts}
+                        posts={filteredPosts}
                     />
                 </div>
             </div>

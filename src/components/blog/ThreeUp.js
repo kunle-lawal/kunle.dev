@@ -1,24 +1,26 @@
 import React from 'react'
 import TimePosted from './TimePosted'
 import { Link } from "gatsby"
+import Img from 'gatsby-image'
+import NoImageFound from '../../assets/images/NoImageFound.jpg'
 
 const PostList = (props) => {
     const post = props.post
-    console.log(post);
+    const image = post.frontmatter.image.childImageSharp.fluid;
+    const desc = post.frontmatter.description;
+    const date = post.frontmatter.date;
     return (
         <Link to={`/blog${post.fields.slug}`}>
             <div className="my_post">
-                <div className="image_container">
-                    <img src="" alt="" />
-                </div>
+                <Img className='img' fluid={image}/>
 
                 <div className="post_info">
                     <div className="post_blurb">
                         <div className="blurb">
-                            <h2>How to view section C on rite</h2>
+                            <h3>{desc}</h3>
                             <br />
                             <div className="post_meta">
-                                <TimePosted time={1562813777423} />
+                                <h4 className='post-date'>{date}</h4>
                                 {/* <div className="metas">
                                     <div className="actions meta">
                                         <div className="totalComments icon_container action">

@@ -444,7 +444,7 @@ strong {
 }
 .main_body_container .post_container .my_post .post_info .post_blurb .blurb {
   width: 100%;
-  text-align: justify;
+  text-align: left;
   margin: auto;
 }
 .main_body_container .post_container .my_post .post_info .post_blurb .blurb .post_meta {
@@ -569,9 +569,11 @@ strong {
   width: 600px;
   height: 100%;
   float: right;
+  background-image: url(https://d2x5ku95bkycr3.cloudfront.net/App_Themes/Common/images/profile/0_200.png);
   background-repeat: no-repeat;
+  background-size: 100%;
   background-position: center;
-  background-color: #6994a3;
+  position: relative;
 }
 @media only screen and (max-width: 700px) {
   .main_body_container .hero .featured_post_image {
@@ -635,9 +637,8 @@ strong {
     width: 75%;
   }
 }
-.main_body_container .hero .recent_post h2 {
-  font-family: "Darker Grotesque", sans-serif;
-  font-weight: 900;
+.main_body_container .hero .recent_post h3 {
+  font-family: "Quicksand", sans-serif;
   color: white;
 }
 .main_body_container .hero .recent_post .metas i {

@@ -1,11 +1,25 @@
 import React from 'react'
+import Img from 'gatsby-image'
 
 const FeaturedPost = (props) => {
+    const posts = props.posts
+    // const image = post.frontmatter.image.childImageSharp.fluid;
+    // const desc = post.frontmatter.description;
+    // const date = post.frontmatter.date;
+    console.log(posts);
     return (
         <>
             <div className="featured_post">
                 <div className="featured_post_image">
-                    <img src="" alt=""/>
+                    {/* {
+                        posts.map((item, index) => {
+                            console.log(item);
+                            const image = item.node.frontmatter.image.childImageSharp.fluid;
+                            return (
+                                <Img className='img' fluid={image} key={index}/>
+                            )
+                        })
+                    } */}
                 </div>
                 <div className="featured_post_info">
                     <header>
